@@ -1,0 +1,30 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Marcellus</title>
+        <meta name="description" content="My very own website, featuring all of my software endeavours">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="static/favicon_io/favicon-32x32.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        {% block additionalstyle %}{% endblock %}
+    </head>
+    <body>
+
+        {% block nav%}
+            {% include "navbar_partial.html" %}
+        {% endblock %}
+        
+        {% block main %}
+        {% endblock %}
+
+        <script type="text/javascript" src="{% static 'js/index.js' %}" async defer></script>
+    </body>
+</html>

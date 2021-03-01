@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block additionalstyle %}
+    <link rel="stylesheet" href="{% static 'css/resume.css' %}">
+{% endblock %}
+{% block main %}
+        <a id="downloadanchor" href="{% static 'pdfs/resume.pdf' %}" download>Download resume as PDF<a/>
+        <div id="resumecontainer" class="container">
+            <!-- <embed  id="embedpdf" src="static/pdfs/resume.pdf" /> -->
+            {% include "resume_partial.html" %}
+        </div>
+{% endblock%}
