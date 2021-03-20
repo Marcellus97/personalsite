@@ -1,3 +1,3 @@
 # personalsite
 
-[marcellus.dev](www.marcellus.dev)
+[marcellus.dev](https://marcellus.dev)
