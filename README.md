@@ -1,3 +1,3 @@
 # personalsite
 
-(marcellus.dev)![marcellus.dev]
+[marcellus.dev](marcellus.dev)
